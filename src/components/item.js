@@ -5,14 +5,15 @@ function Item () {
 
     if (loading) return <p>loading...</p>
     if (error) return <p>error</p>
+    console.log(data)
 
     return (
      <div>
         {
-        data.map(simpletext => (
-          <div key={simpletext.id} className="foto-1">
-            <p>{simpletext.title}</p>
-            <p>{simpletext.info}</p>
+        data.data.map(simpletext => (
+          <div key={simpletext.id} Name="txt">
+            <p>{simpletext.attributes.title}</p>
+            <p>{simpletext.attributes.info}</p>
           </div>
         ))
       }

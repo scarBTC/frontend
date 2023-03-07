@@ -4,15 +4,14 @@ import BodyTop from './components/bodyTop';
 import Body from './components/body';
 import Footer from './components/footer';
 import Item from './components/item';
+import ItemFoto from './components/itemFoto';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <BodyTop />
-      <div>
-        {/* <Item/> */}
-      </div>
+        <ItemFoto/>
       <Body />
       <Footer/>
     </div>
